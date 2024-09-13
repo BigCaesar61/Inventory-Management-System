@@ -9,4 +9,3 @@ let inventory = [
 {name: "Gloves", price: 15.00, quantity: 500, lowStockLevel: 100},
 
 ];
-console.log(inventory);
