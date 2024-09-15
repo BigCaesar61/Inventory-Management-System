@@ -62,3 +62,18 @@ function calculateInventoryValue(inventory) {
 
     console.log(`Total value of our inventory is: $${totalInventoryValue.toFixed(2)}`);
 };
+
+//Task 6: Create a Function to Process a Sale
+
+function processSale(productName, unitsSold){
+const product = inventory.find(product => product.name === productName);
+if (product) {
+return `Sale Processed: ${product.name}`;
+} else {
+    return 'Product not Found';
+}
+
+}
+
+console.log(processSale("Football",10)); //tests processSale Function
+console.log(processSale("Smartwatch",5)); //tests processSale function with someonething that does not exist in array
