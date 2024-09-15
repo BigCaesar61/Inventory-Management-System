@@ -6,7 +6,7 @@ let inventory = [
 {name: "Baseball", price: 5.99, quantity: 200, lowStockLevel: 25},
 {name: "Soccerball", price: 12.00, quantity: 200, lowStockLevel: 25},
 {name: "Cleats", price: 45.99, quantity: 500, lowStockLevel: 100},
-{name: "Gloves", price: 15.00, quantity: 500, lowStockLevel: 100},
+{name: "Gloves", price: 15.00, quantity: 50, lowStockLevel: 100},
 
 ];
 
@@ -37,3 +37,19 @@ function updateStock(product, unitsSold) {
         console.log(`Updated Stock for ${product.name}. Current quantity: ${product.quantity}`);
     }
 };
+
+
+//Task 4: Create a Function to Check Low Stock Products
+
+function checkLowStock(inventory) {
+    console.log("Low Stock items:");
+
+    inventory.forEach(product => {
+        if (product.quantity <= product.lowStockLevel) {
+            console.log(`${product.name} (Quantity: ${product.quantity})`);
+        } else {
+            console.log("No low stock items.");
+        }
+    });
+}
+
