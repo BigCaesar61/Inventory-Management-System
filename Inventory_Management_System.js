@@ -14,7 +14,7 @@ let inventory = [
 //Task 2: Create a Function to Display Product Details
 
 function displayProductDetails(product) {
- let stockStatus = product.quantity <= product.lowStockLevel ? "In Stock" : "Low Stock";
+ let stockStatus = product.quantity <= product.lowStockLevel ? "Low Stock" : "In stock";
  console.log(`Product Name: ${product.name}`);
  console.log(`Price: $${product.price.toFixed(2)}`);
  console.log(`Quantity in Stock: ${product.quantity}`);
